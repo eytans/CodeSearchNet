@@ -2,6 +2,29 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)  [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![Weights-And-Biases](https://img.shields.io/badge/Weights%20&%20Biases-black.svg?logo=google-analytics)](https://app.wandb.ai/github/CodeSearchNet/benchmark)
 
+*********************************
+
+# Data Augmentation Project
+The TecSE lab in the Technion developed a tool that allows program augmentation on functions in Haskell language (Theory Exploration - TE).
+Augmentations such as image and text augmentations had led to proven improvements in Machine Learning algorithms and their performance.
+The idea for this project was that the same improvements can be achieved in the realms of program-to-text ML algorithms.
+For a  more detailed document see [this doc] https://docs.google.com/document/d/1tpjtiQVWGAUTQGtxiQ4jxoXEQIQLRjq8V3e9IJZNLts/edit?usp=sharing
+
+## Genertated data
+To see a sample of the generated data see [sample_data]: https://github.com/eytans/CodeSearchNet/tree/master/function_parser/sample_data
+The following [notebook] https://github.com/eytans/CodeSearchNet/tree/master/function_parser/function_parser/haskell_demo.ipynb provides a demo for the data creation process.
+For the full data process, follow the instruction in [this README]: https://github.com/eytans/CodeSearchNet/edit/master/function_parser/README.md
+
+## Important files
+- Under function_parser/function_parser/parsers you can find our haskell parser. All the work with it is identical to the way CodeSearchNet works with other languages so we recommend looking at the way it works for them (we copied the way the python parser works).
+- Sample_data is located in function_parser/
+- The heavy lifting is done by the file process_ours.py, It is not 'release ready' - poke around to understand it better.
+
+## Data support 
+Checkout the Schema & Format section to understand the output format of the data. Some additional fields such as 'argument list' exist, but we are not supporting them since it does not seem to be relevant.
+
+*********************************
+
 [paper]: https://arxiv.org/abs/1909.09436
 
 > # The CodeSearchNet challenge has been concluded
