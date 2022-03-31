@@ -22,3 +22,18 @@ def get_docstring_summary(docstring: str) -> str:
     elif '@' in docstring:
         return docstring[:docstring.find('@')]  # This usually is the start of a JavaDoc-style @param comment.
     return docstring
+
+
+def strip_haskell_style_comment_delimiters(comment: str) -> str:
+    comment_lines = comment.split('\n')
+    cleaned_lines = []
+    for l in comment_lines:
+        l = l.strip()
+        if l.startswith('-- |'):
+            l = l[4:]
+        if l.startswith('--'):
+            l = l[2:]
+        elif l.startswith('-- >'):
+            l = l[4:]
+        cleaned_lines.append(l.strip())
+    return '\n'.join(cleaned_lines)
