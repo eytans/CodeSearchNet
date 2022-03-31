@@ -1,7 +1,7 @@
 # Function Parser
 
 ****************
-This is a changed README, only the "TO run the script" section was modified.
+This is a changed README, only the "To run the script" section was modified.
 ****************
 
 > # A community-driven, standalone version of the function-parsing code in this folder, that can be installed as a PyPI package can be found [here](https://github.com/ncoop57/function_parser).
@@ -63,4 +63,4 @@ A [demo notebook](function_parser/demo.ipynb) is also provided for exploration.
 2. `script/setup` to download libraries.io data
 3. `script/console` to ssh into the container
 4. run `pip install tree-sitter` and make sure the version is 0.20 and above (worked on 0.20)
-5. Inside the container, run the main function of process_ours.py. NOTE: The output is very big and will probably crush the program. For the reason we split the data to smaller chunks, see file.
+5. Inside the container, run the main function of process_ours.py. NOTE: The output is very big and will probably crush the program. For that reason, we split the data into smaller chunks, see file.
