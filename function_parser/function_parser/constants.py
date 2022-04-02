@@ -1,0 +1,1 @@
+PATH_TO_LANGUAGES_SO = '/home_local/guest-9530/Documents/program_augmentation/CodeSearchNet/function_parser/tree-sitter-languages.so'
